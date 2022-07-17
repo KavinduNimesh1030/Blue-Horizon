@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="505.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddRoomFormController">
+   <children>
+      <AnchorPane fx:id="AddRoomContext" prefHeight="505.0" prefWidth="649.0" style="-fx-background-color: White;" stylesheets="@../asserts/Styles/AddRoom.css">
+         <children>
+            <ImageView fitHeight="505.0" fitWidth="362.0" layoutX="287.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/new%20Room%20.jpg" />
+               </image>
+            </ImageView>
+            <Separator layoutX="14.0" layoutY="46.0" prefHeight="0.0" prefWidth="625.0" />
+            <TextField fx:id="txtPrice" layoutX="21.0" layoutY="317.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="248.0" promptText="10000.00" style="-fx-border-color: #182AE2;" styleClass="textField" />
+            <Label layoutX="21.0" layoutY="77.0" text="Room id" textFill="#2d2dd7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="298.0" text="Coat Per Night" textFill="#2d2dd7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtId" layoutX="21.0" layoutY="102.0" onKeyReleased="#textFields_Key_Released" prefHeight="27.0" prefWidth="149.0" promptText="R001" style="-fx-border-color: #182AE2;" styleClass="textField" />
+            <ComboBox fx:id="cmbCapacity" layoutX="21.0" layoutY="174.0" prefHeight="25.0" prefWidth="248.0" style="-fx-background-color: #FFFFFE; -fx-border-color: #182AE2; -fx-background-radius: 20; -fx-border-radius: 20;" styleClass="textField" />
+            <Label layoutX="21.0" layoutY="365.0" text="Is available" textFill="#2d2dd7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="150.0" text="Room Capacity" textFill="#2d2dd7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="220.0" text="Room Type" textFill="#2d2dd7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbType" layoutX="19.0" layoutY="245.0" prefHeight="25.0" prefWidth="248.0" style="-fx-background-color: #FFFFFE; -fx-border-color: #182AE2; -fx-background-radius: 20; -fx-border-radius: 20;" />
+            <ComboBox fx:id="cmbIsAvailable" layoutX="19.0" layoutY="389.0" prefHeight="25.0" prefWidth="248.0" style="-fx-background-color: #FFFFFE; -fx-border-color: #182AE2; -fx-background-radius: 20; -fx-border-radius: 20;" />
+            <TextField fx:id="txtHeadId" layoutX="373.0" layoutY="14.0" onAction="#txtSearchOnAction" prefHeight="27.0" prefWidth="162.0" promptText="Enter Room id" style="-fx-background-radius: 20; -fx-border-radius: 20;" />
+            <Text fill="#646568" layoutX="20.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Room" wrappingWidth="127.708984375">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="22.0" />
+               </font>
+            </Text>
+            <Button layoutX="183.0" layoutY="102.0" mnemonicParsing="false" onAction="#btnNewRoomOnAction" prefHeight="27.0" prefWidth="84.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #0116fc;" text="+ ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnSaveRoom" layoutX="160.0" layoutY="437.0" mnemonicParsing="false" onAction="#btnRoomOnAction" prefHeight="27.0" prefWidth="107.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #182AE2;" text="Save Room" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="541.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnViewRoomOnAction" prefHeight="27.0" prefWidth="98.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #165498;" text="View Rooms" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

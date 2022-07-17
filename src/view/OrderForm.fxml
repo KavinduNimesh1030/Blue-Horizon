@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="OrderContext" prefHeight="505.0" prefWidth="649.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderFormController">
+   <children>
+      <ImageView fitHeight="206.0" fitWidth="649.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/finalbg.jpg" />
+         </image>
+      </ImageView>
+      <TextField layoutX="448.0" layoutY="8.0" prefHeight="27.0" prefWidth="186.0" promptText="Search" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #182AE2;" styleClass="textField" />
+      <Text fill="#2200ff" layoutX="347.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Everything tastes good " wrappingWidth="268.18505859375">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Text>
+      <Button layoutX="410.0" layoutY="146.0" mnemonicParsing="false" onAction="#btnCheckCartOnAction" style="-fx-background-color: #F3B0C0; -fx-background-radius: 20;" text="Check Your Cart" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutX="96.0" layoutY="197.0" prefHeight="0.0" prefWidth="472.0" />
+      <Separator layoutX="323.0" layoutY="40.0" prefHeight="3.0" prefWidth="316.0" />
+      <Text fill="#2200ff" layoutX="364.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="when you're hungry." wrappingWidth="279.18505859375">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="255.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Popular Food" wrappingWidth="154.18505859375">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="201.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We provide a varienty of food and beverage recipes" wrappingWidth="291.18505859375" />
+      <Text layoutX="252.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" with high taste from famouse chefs" />
+      <FontAwesomeIconView fill="#b9aaaa" glyphName="SEARCH" layoutX="609.0" layoutY="25.0" />
+      <AnchorPane layoutX="29.0" layoutY="282.0" prefHeight="170.0" prefWidth="135.0" style="-fx-background-color: blue; -fx-background-radius: 20;">
+         <children>
+            <AnchorPane layoutX="9.0" layoutY="127.0" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+               <children>
+                  <Text fill="#0911e1" layoutX="21.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add to Cart" wrappingWidth="79.416015625">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="9.0" layoutY="1.0" mnemonicParsing="false" onAction="#AAddTOCartOnAction" prefHeight="12.0" prefWidth="89.0" style="-fx-background-color: trancpraint;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Text fill="WHITE" layoutX="5.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="English Breakfast" wrappingWidth="126.0">
+               <font>
+                  <Font name="Bell MT Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="9.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs." wrappingWidth="79.416015625">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="25.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="700.00" wrappingWidth="79.416015625">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="183.0" layoutY="282.0" prefHeight="170.0" prefWidth="135.0" style="-fx-background-color: blue; -fx-background-radius: 20;">
+         <children>
+            <AnchorPane layoutX="9.0" layoutY="127.0" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+               <children>
+                  <Text fill="#0911e1" layoutX="17.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add to Cart" wrappingWidth="79.416015625">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="13.0" layoutY="-2.0" mnemonicParsing="false" onAction="#BAddTOCartOnAction" prefHeight="12.0" prefWidth="89.0" style="-fx-background-color: trancpraint;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Text fill="WHITE" layoutX="9.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Srilanka Menu" wrappingWidth="126.0">
+               <font>
+                  <Font name="Bell MT Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="10.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs." wrappingWidth="79.416015625">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="25.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1000.00" wrappingWidth="79.416015625">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="338.0" layoutY="282.0" prefHeight="170.0" prefWidth="135.0" style="-fx-background-color: blue; -fx-background-radius: 20;">
+         <children>
+            <AnchorPane layoutX="9.0" layoutY="127.0" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+               <children>
+                  <Text fill="#0911e1" layoutX="21.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add to Cart" wrappingWidth="79.416015625">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="10.0" layoutY="-1.0" mnemonicParsing="false" onAction="#CAddTOCartOnAction" prefHeight="12.0" prefWidth="89.0" style="-fx-background-color: trancpraint;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Text fill="WHITE" layoutX="4.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Italian Pizza" wrappingWidth="126.0">
+               <font>
+                  <Font name="Bell MT Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="5.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs." wrappingWidth="79.416015625">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="20.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="500.00" wrappingWidth="79.416015625">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="491.0" layoutY="282.0" prefHeight="170.0" prefWidth="135.0" style="-fx-background-color: blue; -fx-background-radius: 20;">
+         <children>
+            <AnchorPane layoutX="9.0" layoutY="127.0" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+               <children>
+                  <Text fill="#0911e1" layoutX="19.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add to Cart" wrappingWidth="79.416015625">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="11.0" layoutY="-7.0" mnemonicParsing="false" onAction="#DAddTOCartOnAction" prefHeight="12.0" prefWidth="89.0" style="-fx-background-color: trancpraint;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Text fill="WHITE" layoutX="3.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="chocolate mousse" wrappingWidth="126.0">
+               <font>
+                  <Font name="Bell MT Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="4.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs." wrappingWidth="79.416015625">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="19.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="300.00" wrappingWidth="79.416015625">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="91.0" fitWidth="116.0" layoutX="66.0" layoutY="245.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/breakfast-background-6.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="126.0" layoutX="215.0" layoutY="250.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/Dish-PNG-High-Quality-Image.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="126.0" layoutX="365.0" layoutY="249.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/pizza_PNG7140.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="126.0" layoutX="513.0" layoutY="246.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/6957200_preview.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="270.0" layoutY="464.0" mnemonicParsing="false" onAction="#btnOrderMoreOnAction" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: #F3B0C0; -fx-background-radius: 20;" text="Order More" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

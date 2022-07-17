@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="505.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomContextFormController">
+   <children>
+      <AnchorPane fx:id="RoomContext" prefHeight="505.0" prefWidth="649.0" />
+   </children>
+</AnchorPane>

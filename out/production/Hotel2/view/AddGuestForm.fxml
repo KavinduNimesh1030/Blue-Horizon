@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddGuestFormController">
+   <children>
+      <AnchorPane layoutY="1.0" prefHeight="505.0" prefWidth="649.0" stylesheets="@../asserts/Styles/AddGuest.css">
+         <children>
+            <ImageView fitHeight="505.0" fitWidth="649.0" layoutY="-1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/new.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtName" layoutX="55.0" layoutY="170.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="248.0" promptText="Nimal Silva" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #182AE2;" styleClass="textField" />
+            <TextField fx:id="txtAddress" layoutX="55.0" layoutY="236.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="248.0" promptText="No21 Galle road Kaluthara" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #182AE2;" styleClass="textField" />
+            <TextField fx:id="txtTeleNo" layoutX="55.0" layoutY="303.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="248.0" promptText="+94770000000" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #182AE2;" styleClass="textField" />
+            <TextField fx:id="txtEmail" layoutX="55.0" layoutY="370.0" onKeyReleased="#textFields_Key_Released" prefHeight="22.0" prefWidth="248.0" promptText="nimal@gmail.com" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #182AE2;" styleClass="textField" />
+            <TextField fx:id="txtId" layoutX="55.0" layoutY="102.0" onKeyReleased="#textFields_Key_Released" prefHeight="27.0" prefWidth="128.0" promptText="C001" style="-fx-border-color: #182AE2;" styleClass="textField" />
+            <Separator layoutX="14.0" layoutY="50.0" prefHeight="1.0" prefWidth="622.0" />
+            <Label layoutX="55.0" layoutY="82.0" text="Customer id" textFill="#2d2dd7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="152.0" text="Customer Name" textFill="#2d2dd7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="217.0" text="Customer Addres" textFill="#2d2dd7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="286.0" text="Customer Telephone No" textFill="#2d2dd7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="353.0" text="Customer Email" textFill="#2d2dd7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtHeadId" layoutX="408.0" layoutY="13.0" onAction="#txtSearchOnAction" prefHeight="27.0" prefWidth="162.0" promptText="Enter Customer id" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #FFFFFE;" />
+            <Button fx:id="btnSaveCustomer" layoutX="197.0" layoutY="102.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="27.0" prefWidth="107.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #182AE2;" text="Save Customer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fill="#646568" layoutX="26.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Guest" wrappingWidth="127.708984375">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="22.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="#bfb4b4" glyphName="SEARCH" layoutX="545.0" layoutY="30.0" />
+            <Button layoutX="577.0" layoutY="13.0" mnemonicParsing="false" onAction="#btnNewCustomerOnAction" prefHeight="27.0" prefWidth="59.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #FFFFFE;" text="+ ADD" textFill="#0116fc">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="243.0" layoutY="409.0" mnemonicParsing="false" onAction="#btnDeleteCustomerOnAction" prefHeight="27.0" prefWidth="59.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #FFFFFE;" text="Delete" textFill="#0116fc">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

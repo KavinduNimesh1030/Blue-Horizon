@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="245.0" prefWidth="419.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomShortFormController">
+   <children>
+      <ImageView fitHeight="245.0" fitWidth="430.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/Search%20image.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="22.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room ID - ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblRoomId" layoutX="113.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R001 ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="RoomImageview" fitHeight="150.0" fitWidth="246.0" layoutX="22.0" layoutY="45.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/wepik-2022217-223335.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="339.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="14.0" fitWidth="120.0" layoutX="20.0" layoutY="200.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/6190.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblRoomType" layoutX="375.0" layoutY="90.0" prefHeight="17.0" prefWidth="54.0" text="VIP" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="281.0" layoutY="90.0" prefHeight="17.0" prefWidth="91.0" text="Room Type        - " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRoomCapacity" layoutX="373.0" layoutY="119.0" prefHeight="17.0" prefWidth="40.0" text="Double" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="119.0" prefHeight="17.0" prefWidth="98.0" text="Room Capacity  -   " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Separator layoutX="12.0" layoutY="34.0" prefHeight="0.0" prefWidth="399.0" />
+      <Text fill="#070bff" layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Result">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="280.0" layoutY="149.0" prefHeight="17.0" prefWidth="91.0" text="Cost per day      - " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRoomCost" layoutX="371.0" layoutY="149.0" prefHeight="17.0" prefWidth="48.0" text="1000.00" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeButton" layoutX="339.0" layoutY="202.0" mnemonicParsing="false" onAction="#btnCloseOnAction" prefHeight="27.0" prefWidth="69.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-background-radius: 10; -fx-border-radius: 10;" text="Close" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

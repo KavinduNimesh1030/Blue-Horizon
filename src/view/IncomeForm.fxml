@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="505.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomeFormController">
+   <children>
+      <ImageView fitHeight="505.0" fitWidth="649.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/income.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#686363" layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Income">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+      </Text>
+      <Label layoutX="66.0" layoutY="94.0" text="Alway Trying to  " textFill="#1a00ff">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="126.0" text="build Your" textFill="#1a00ff">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="155.0" text="Income" textFill="#1a00ff">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="20.0" layoutY="46.0" prefHeight="3.0" prefWidth="615.0" />
+      <AnchorPane layoutX="455.0" layoutY="61.0" prefHeight="67.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <children>
+            <AnchorPane layoutX="106.0" prefHeight="67.0" prefWidth="74.0" style="-fx-background-color: #F0AF3A; -fx-background-radius: 10;">
+               <children>
+                  <Label fx:id="textTotalArrivals" layoutX="37.0" layoutY="34.0" prefHeight="25.0" prefWidth="26.0" text="12" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="WHITE" glyphName="TABLE" layoutX="41.0" layoutY="21.0" size="15.0" wrappingWidth="16.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="66.0" prefHeight="67.0" prefWidth="46.0" style="-fx-background-color: white;" />
+            <Label layoutX="6.0" layoutY="11.0" prefHeight="25.0" prefWidth="124.0" text="Total Arrivals">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="455.0" layoutY="149.0" prefHeight="67.0" prefWidth="180.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-radius: 10;">
+         <children>
+            <AnchorPane prefHeight="67.0" prefWidth="119.0" style="-fx-background-color: #F0AF3A; -fx-background-radius: 10;" />
+            <Label layoutX="12.0" layoutY="5.0" text="Total Orders">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="112.0" prefHeight="67.0" prefWidth="46.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="textTotalOrders" layoutX="32.0" layoutY="32.0" prefHeight="25.0" prefWidth="26.0" text="12" textFill="#f0af3a">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="#f0af3a" glyphName="BOOK" layoutX="35.0" layoutY="20.0" size="15.0" wrappingWidth="16.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="47.0" layoutY="255.0" prefHeight="200.0" prefWidth="152.0" style="-fx-background-color: trancpraint; -fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <children>
+            <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly Income">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last 30 days income">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Text>
+            <Label layoutX="12.0" layoutY="62.0" text="Reservation" textFill="#1a00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="88.0" text="Rs." textFill="#1a00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="textResMonthlyIncome" layoutX="35.0" layoutY="82.0" text="175000" textFill="#1a00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="127.0" text="Orders" textFill="#1a00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="153.0" text="Rs." textFill="#1a00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="textOrderMonthlyIncome" layoutX="38.0" layoutY="147.0" text="175000" textFill="#1a00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="461.0" layoutY="255.0" prefHeight="200.0" prefWidth="152.0" style="-fx-background-color: trancpraint; -fx-border-color: white; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <children>
+            <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anually Income">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="365 days income">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Text>
+            <Label layoutX="12.0" layoutY="62.0" text="Reservation" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="88.0" text="Rs." textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="textResAnnuallyIncome" layoutX="35.0" layoutY="82.0" text="175000" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="127.0" text="Orders" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="153.0" text="Rs." textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="textOrderAnnuallyIncome" layoutX="38.0" layoutY="147.0" text="175000" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="216.0" layoutY="257.0" prefHeight="71.0" prefWidth="233.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: blue;">
+         <children>
+            <AnchorPane layoutX="102.0" layoutY="2.0" prefHeight="67.0" prefWidth="131.0" style="-fx-background-color: #F0AF3A; -fx-background-radius: 10;">
+               <children>
+                  <Label fx:id="textTotalIncome" layoutX="33.0" layoutY="29.0" prefHeight="30.0" prefWidth="98.0" text="100000" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="38.0" text="Rs." textFill="#1a00ff">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="WHITE" glyphName="MONEY" layoutX="81.0" layoutY="21.0" size="20.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="95.0" layoutY="2.0" prefHeight="67.0" prefWidth="16.0" style="-fx-background-color: white;" />
+            <Label layoutX="8.0" layoutY="9.0" prefHeight="25.0" prefWidth="139.0" text="Total Income">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="251.0" layoutY="340.0" prefHeight="49.0" prefWidth="200.0" style="-fx-background-color: trancpraint; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black;">
+         <children>
+            <Label layoutX="45.0" layoutY="5.0" text=" Reservation Income" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="textTotalResIncome" layoutX="135.0" layoutY="28.0" text="175000" textFill="#f0af3a">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="122.0" layoutY="32.0" text="Rs." textFill="#f0af3a">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="9.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#f0af3a" glyphName="TABLE" layoutX="29.0" layoutY="21.0" size="15.0" wrappingWidth="16.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="271.0" layoutY="404.0" prefHeight="49.0" prefWidth="180.0" style="-fx-background-color: trancpraint; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black;">
+         <children>
+            <Label layoutX="69.0" layoutY="5.0" text=" Order Income" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="textTotalOrderIncome" layoutX="118.0" layoutY="28.0" text="175000" textFill="#f0af3a">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="105.0" layoutY="32.0" text="Rs." textFill="#f0af3a">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="9.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#f0af3a" glyphName="BOOK" layoutX="49.0" layoutY="21.0" size="15.0" wrappingWidth="16.0" />
+         </children>
+      </AnchorPane>
+      <TextField layoutX="462.0" layoutY="13.0" prefHeight="25.0" prefWidth="173.0" promptText="Search" style="-fx-background-radius: 20;" />
+      <FontAwesomeIconView fill="#757171" glyphName="SEARCH" layoutX="615.0" layoutY="29.0" size="12" wrappingWidth="12.0" />
+   </children>
+</AnchorPane>
